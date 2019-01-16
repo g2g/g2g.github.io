@@ -58,6 +58,30 @@ git push -u origin --all
 xdg-open https://myrepo.github.io  # access to your personal blog
 
 ```
+## Link to your custom domain ##
+
+* on your **repository root directory**:
+  * set your custom domain
+
+```sh
+cat <<EOF> CNAME
+mydomain.net
+EOF
+sed -ri 's#^(url.*: ).*#\1"https://mydomain.net"#' _config.yml
+```
+
+* on **https://github.com/myrepo**:
+  * Settings tab # Github pages > Custom domain : mydomain.net
+  * Save
+* on **your DNS provider**:
+  * Set A records with:
+
+```
+mydomain.net.             26735   IN      A       185.199.108.153
+mydomain.net.             26735   IN      A       185.199.109.153
+mydomain.net.             26735   IN      A       185.199.110.153
+mydomain.net.             26735   IN      A       185.199.111.153
+```
 
 ## Sources ##
 
