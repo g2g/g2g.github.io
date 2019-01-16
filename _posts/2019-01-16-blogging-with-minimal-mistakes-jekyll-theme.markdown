@@ -36,7 +36,7 @@ bundle exec octopress new post "Blogging with Minimal Mistakes Jekyll theme"
 # NEED: create myrepo.github.io repository in your Github repo
 cd myrepo.github.io
 git remote set origin git@github.com:myrepo/myrepo.github.io.git
-git remote set upstream git@github.com:mmistakes/minimal-mistakes.git
+git remote add upstream git@github.com:mmistakes/minimal-mistakes.git
 git add .
 git commit -am "My first post"
 xdg-open https://myrepo.github.io  # access to your personal blog
