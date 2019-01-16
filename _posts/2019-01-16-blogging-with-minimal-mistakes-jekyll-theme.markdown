@@ -28,7 +28,10 @@ bundle exec jekyll serve --watch                 # run in reload mode
 ```sh
 bundle add jekyll-paginate octopress
 bundle exec octopress new post "Blogging with Minimal Mistakes Jekyll theme"
-
+# TIP: alias for octopress
+cat << EOF >> $HOME/.bashrc
+alias octopress='bundle exec octopress'
+EOF
 ```
 ## Deploy to Gihub Pages ##
 
