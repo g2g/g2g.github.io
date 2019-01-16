@@ -10,8 +10,8 @@ date: 2019-01-16T01:16:46+01:00
     (good for migration / reinstallation / testing in local)
   * create **easily** new post with Octopress (embedded too)
 * **CONS**:
-  * bad performance for generating static pages with big blogs  
-    (unlike with Hugo)
+  * bad performance for generating static pages  
+    with big blogs (unlike with Hugo)
   * made in Ruby
   * CLI addicted :)
 
