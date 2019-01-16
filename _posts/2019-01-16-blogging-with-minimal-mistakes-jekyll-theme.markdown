@@ -3,7 +3,16 @@ title: Blogging with Minimal Mistakes Jekyll theme
 date: 2019-01-16T01:16:46+01:00
 ---
 
-## Install with Github Pages compatibility ##
+* **PROS**:
+  * Github / Gitlab Pages **compatible**
+  * all gems **embedded**  
+    (good for migration / reinstallation / testing in local)
+  * create **easily** new post with Octopress (embedded too)
+* **CONS**:
+  * bad performance for big blogs (unlike with Hugo)
+  * made in Ruby :)
+
+## Install in Github Pages mode ##
 
 * use **bundle 2.0**
 * **all gems** are embedded in repository's **./vendor/bundle** folder
