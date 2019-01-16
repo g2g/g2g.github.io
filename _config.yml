@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Laurent G."
   avatar           : "/assets/images/alinea.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Lost in Internet ? Welcome in my island ! :)"
+  bio              : "Lost in Internet ? Welcome in my island !"
   location         : "Terra"
   email            :
   links:

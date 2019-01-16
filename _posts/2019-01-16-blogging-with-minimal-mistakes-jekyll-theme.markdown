@@ -16,7 +16,7 @@ bundle init
 bundle install --path vendor/bundle              # embedded gems
 bundle add github-pages --group=jekyll_plugins
 bundle add minimal-mistakes-jekyll
-bundle exec jekyll serve --watch                 # run jekyll locally in reload mode
+bundle exec jekyll serve --watch                 # run in reload mode
 
 ```
 
@@ -25,9 +25,21 @@ bundle exec jekyll serve --watch                 # run jekyll locally in reload 
 * automate the creation of new posts and pages for easier management
 
 
-```
+```sh
 bundle add jekyll-paginate octopress
 bundle exec octopress new post "Blogging with Minimal Mistakes Jekyll theme"
+
+```
+## Deploy to Gihub Pages ##
+
+```sh
+# NEED: create myrepo.github.io repository in your Github repo
+cd myrepo.github.io
+git remote set origin git@github.com:myrepo/myrepo.github.io.git
+git remote set upstream git@github.com:mmistakes/minimal-mistakes.git
+git add .
+git commit -am "My first post"
+xdg-open https://myrepo.github.io  # access to your personal blog
 
 ```
 
