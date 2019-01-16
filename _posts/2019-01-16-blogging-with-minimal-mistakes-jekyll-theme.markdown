@@ -33,7 +33,7 @@ cat << EOF >> $HOME/.bashrc
 alias octopress='bundle exec octopress'
 EOF
 ```
-## Deploy to Gihub Pages ##
+## Deploy to Github Pages ##
 
 ```sh
 # NEED: create myrepo.github.io repository in your Github repo
@@ -42,6 +42,7 @@ git remote set origin git@github.com:myrepo/myrepo.github.io.git
 git remote add upstream git@github.com:mmistakes/minimal-mistakes.git
 git add .
 git commit -am "My first post"
+git push -u origin --all
 xdg-open https://myrepo.github.io  # access to your personal blog
 
 ```
