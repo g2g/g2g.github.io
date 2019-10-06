@@ -25,6 +25,7 @@ EOF
 chmod 0700 authorized_keys
 sftp -P 1234 user@<ip_displayed_by_primitive_ftpd>
 > mkdir .ssh
+> cd .ssh
 > put authorized_keys
 ```
 
