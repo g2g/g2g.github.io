@@ -111,6 +111,8 @@ author:
   bio              : "Lost in Internet ? Welcome to my island !"
   location         : "Terra"
   email            :
+  github           : "g2g"
+  twitter          : "log2g"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
