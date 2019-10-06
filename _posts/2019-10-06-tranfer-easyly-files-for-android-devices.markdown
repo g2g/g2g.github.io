@@ -5,9 +5,11 @@ date: 2019-10-06T01:50:11+01:00
 
 Transfer files for Android devices with Primitive FTPd server (ftp/sftp)
 
-## Download Primitive FTPd server App at FDroid MarketPlace ##
+## Download Primitive FTPd Apk ##
 
-* From Fdroid app or https://f-droid.org/en/packages/org.primftpd/
+* From [Fdroid website](https://f-droid.org/en/packages/org.primftpd/)
+* From Fdroid MarketPlace 
+* From Google Play
 
 ## Configure Primitive FTPd  ##
 
@@ -35,8 +37,8 @@ sftp -P 1234 user@<ip_displayed_by_primitive_ftpd>
 
 ```
 mkdir $HOME/droid
-sshfs user@<ip_displayed_by_primitive_ftpd>: $HOME/droid  # mount
-fusermount3 -u $HOME/droid
+sshfs user@<ip_displayed_by_primitive_ftpd>: $HOME/droid   # mount
+fusermount3 -u $HOME/droid                                 # umount
 ```
 * mount it via fstab [BE ROOT]
 
@@ -44,6 +46,8 @@ fusermount3 -u $HOME/droid
 cat <<EOF>> /etc/fstab
 user@<ip_displayed_by_primitive_ftpd>: /home/user/droid  fuse.sshfs noauto,x-systemd.automount,_netdev,users,IdentityFile=/home/user/.ssh/id_rsa,allow_other,reconnect 0 0
 EOF
+mount $HOME/droid                                          # mount
+umount $HOME/droid                                         # umount
 ```
 
 That' s all !
