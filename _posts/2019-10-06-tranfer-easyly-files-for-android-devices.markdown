@@ -32,6 +32,7 @@ sftp -P 1234 user@<ip_displayed_by_primitive_ftpd>
 ## Configure your machine ##
 
 * mount it for test purpose (or temporarily)
+
 ```
 mkdir $HOME/droid
 sshfs user@<ip_displayed_by_primitive_ftpd>: $HOME/droid  # mount
