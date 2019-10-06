@@ -38,14 +38,15 @@ sftp -P 1234 user@<ip_displayed_by_primitive_ftpd>
 
 ```
 mkdir $HOME/droid
-sshfs user@<ip_displayed_by_primitive_ftpd>: $HOME/droid   # mount
+sshfs -p 1234 -o idmap=user user@<ip_displayed_by_primitive_ftpd>: $HOME/droid   # mount
 fusermount3 -u $HOME/droid                                 # umount
 ```
-* mount it via fstab [BE ROOT]
+* mount it via fstab
 
 ```
+# in root mode
 cat <<EOF>> /etc/fstab
-user@<ip_displayed_by_primitive_ftpd>: /home/user/droid  fuse.sshfs noauto,x-systemd.automount,_netdev,users,IdentityFile=/home/user/.ssh/id_rsa,allow_other,reconnect 0 0
+user@<ip_displayed_by_primitive_ftpd>: /home/user/droid  fuse.sshfs noauto,x-systemd.automount,_netdev,port=1234,users,idmap=user,IdentityFile=/home/user/.ssh/id_rsa,allow_other,reconnect 0 0
 EOF
 mount $HOME/droid                                          # mount
 umount $HOME/droid                                         # umount
