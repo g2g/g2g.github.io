@@ -49,5 +49,8 @@ EOF
 mount $HOME/droid                                          # mount
 umount $HOME/droid                                         # umount
 ```
+## Sources ##
+
+* [SSHFS on Archlinux Wiki](https://wiki.archlinux.org/index.php/SSHFS)
 
 That' s all !
