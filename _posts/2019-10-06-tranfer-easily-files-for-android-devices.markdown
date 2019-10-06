@@ -1,5 +1,5 @@
 ---
-title: Transfer easyly files for Android devices in SFTP mode
+title: Transfer easily files for Android devices in SFTP mode
 date: 2019-10-06T01:50:11+01:00
 ---
 
