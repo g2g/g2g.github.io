@@ -26,7 +26,7 @@ cat /etc/resolv.conf
 * by this way, it will be the first DNS server to be querying for domain name.
 
 * some public DNS servers easy to remember:
-** 1.1.1.1  (Cloudflare)
-** 9.9.9.9  (Quad9)
+  * 1.1.1.1  (Cloudflare)
+  * 9.9.9.9  (Quad9)
 
 * [More public DNS servers](https://en.wikipedia.org/wiki/Public_recursive_name_server)
