@@ -3,11 +3,9 @@ title: Choose a public DNS server for more privacy
 date: 2020-01-15T19:56:35+01:00
 ---
 
-## Choose a public DNS server for more privacy ##
+You have to prepend a nameserver in resolv.conf file.
 
-You want to choose public DNS servers in KISS mode (Keep It Simple and Stupid) ?
-
-So prepend a nameserver in resolv.conf 
+Follow this quick guide in KISS mode (Keep It Simple and Stupid).
 
 
 * create (if not exits) /etc/dhclient.conf file with
