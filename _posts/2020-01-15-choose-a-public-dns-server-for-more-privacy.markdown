@@ -18,7 +18,7 @@ interface "eth0" {
 
 * for testing purpose
 
-```
+```shell
 dhclient eth0 -v
 cat /etc/resolv.conf
 ```
