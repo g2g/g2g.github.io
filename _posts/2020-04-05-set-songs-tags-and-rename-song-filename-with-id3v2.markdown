@@ -1,9 +1,9 @@
 ---
-title: Set songs tags and rename song filename with id3v2
+title: Set songs tags and rename songs filename with id3v2
 date: 2020-04-05T09:21:34+01:00
 ---
 
-in **oneliner mode**
+in **oneliner and mass renaming** mode
 
 * get tags information with **exiftool** and copy tags /rename mp3 file with **id3v2**
 
