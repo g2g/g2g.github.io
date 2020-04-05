@@ -3,9 +3,9 @@ title: Set songs tags and rename song filename with id3v2
 date: 2020-04-05T09:21:34+01:00
 ---
 
-in oneliner mode
+in **oneliner mode**
 
-* get tags information with *exiftool* and copy tags /rename mp3 file with *id3v2*
+* get tags information with **exiftool** and copy tags /rename mp3 file with **id3v2**
 
 ```shell
 IFS=$'\n';for MP3_NAME in *mp3; do \
@@ -17,7 +17,7 @@ mv -vi "$MP3_NAME" "${ARTIST} - ${SONG}.mp3" ;\
 done\
 IFS=$' \t\n'
 ```
-* *id3v2* commands that may help
+* **id3v2** commands that may help
 
 ```shell
 id3v2 -h
