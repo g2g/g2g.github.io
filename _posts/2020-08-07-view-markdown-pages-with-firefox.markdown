@@ -7,8 +7,8 @@ With Markdown Viewer Addon by Simeon Velichkov.
 
 ## Install ##
 
-* (https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-chrome/)
-* (https://github.com/simov/markdown-viewer)
+* <https://addons.mozilla.org/en-US/firefox/addon/markdown-viewer-chrome/>
+* <https://github.com/simov/markdown-viewer>
 
 ## View local markdown pages ##
 
