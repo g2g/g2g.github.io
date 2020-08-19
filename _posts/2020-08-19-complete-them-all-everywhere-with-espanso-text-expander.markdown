@@ -28,6 +28,7 @@ espanso path       # list espanso config files
 ## Sources ##
 
 * [Getting Started](https://espanso.org/docs/get-started/)
+* [Official Packages](https://hub.espanso.org/)
 * [Offical Document](https://espanso.org/docs/)
 * [Pour gagner du temps quand vous tapez au clavier](https://korben.info/espanso-gagner-temps-tapez-clavier.html) [in French]
 * [Use Espanso Text Expander To Save Time And Increase Productivity](https://www.linuxuprising.com/2020/06/use-espanso-text-expander-to-save-time.html)
