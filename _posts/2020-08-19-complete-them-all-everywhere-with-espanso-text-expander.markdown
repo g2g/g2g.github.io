@@ -29,7 +29,7 @@ espanso path       # list espanso config files
 
 * [Getting Started](https://espanso.org/docs/get-started/)
 * [Official Packages](https://hub.espanso.org/)
-* [Offical Document](https://espanso.org/docs/)
+* [Offical Documentation](https://espanso.org/docs/)
 * [Pour gagner du temps quand vous tapez au clavier](https://korben.info/espanso-gagner-temps-tapez-clavier.html) [in French]
 * [Use Espanso Text Expander To Save Time And Increase Productivity](https://www.linuxuprising.com/2020/06/use-espanso-text-expander-to-save-time.html)
 * [The Journey to My First 100 GitHub Stars](https://medium.com/@federicoterzi/the-journey-to-my-first-100-github-stars-aef05d796a18)
