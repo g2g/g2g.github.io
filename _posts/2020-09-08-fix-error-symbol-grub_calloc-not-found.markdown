@@ -1,5 +1,5 @@
 ---
-title: Fix error: symbol 'grub_calloc' not found
+title: Fix error: symbol grub_calloc not found
 date: 2020-09-08T20:56:06+01:00
 ---
 ... by restoring GRUB for crypted disks
