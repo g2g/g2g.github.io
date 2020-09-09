@@ -17,8 +17,11 @@ lsblk -fs
 mount /dev/mapper/arch-root /mnt/
 mount /dev/mapper/arch-home /mnt/home/
 mount /dev/nvme0n1p2 /mnt/boot/
-mount /dev/nvme0n1p1 /mnt/boot/efi/
-grub-install --root-directory=/mnt/  /dev/nvme0n1
+grub-install --root-directory=/mnt/  /dev/nvme0n1                                  # for GRUB LEGACY
+mount /dev/nvme0n1p1 /mnt/boot/efi/                                                # for UEFI systems
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB    # for UEFI systems
 # not necessary
 arch-chroot /mnt/
 ```
+
+* [GRUB by Archlinux Wiki](https://wiki.archlinux.org/index.php/GRUB)
