@@ -9,6 +9,16 @@ After system update and reboot, GRUB failed with this error **`symbol 'grub_call
 * fix it with these commands
 
 ```bash
+fsck /dev/nvme0n1p*
+efibootmgr -c --disk /dev/nvme0n1
+efibootmgr -v /dev/nvme0n1
+```
+
+* check in your BIOS if EFI boot is always configured (link to /boot/efi/EFI/arch/grubx64.efi)
+
+* in bonus, if you want to mount your crypted system
+
+```bash
 cryptsetup open /dev/nvme0n1p3 data
 pvs
 vgs
@@ -17,11 +27,7 @@ lsblk -fs
 mount /dev/mapper/arch-root /mnt/
 mount /dev/mapper/arch-home /mnt/home/
 mount /dev/nvme0n1p2 /mnt/boot/
-grub-install --root-directory=/mnt/  /dev/nvme0n1                                  # for GRUB LEGACY
 mount /dev/nvme0n1p1 /mnt/boot/efi/                                                # for UEFI systems
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB    # for UEFI systems
-# not necessary
-arch-chroot /mnt/
 ```
 
 * [GRUB by Archlinux Wiki](https://wiki.archlinux.org/index.php/GRUB)
