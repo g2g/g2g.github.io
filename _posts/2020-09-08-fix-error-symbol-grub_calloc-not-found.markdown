@@ -28,6 +28,7 @@ mount /dev/mapper/arch-root /mnt/
 mount /dev/mapper/arch-home /mnt/home/
 mount /dev/nvme0n1p2 /mnt/boot/
 mount /dev/nvme0n1p1 /mnt/boot/efi/                                                # for UEFI systems
+arch-chroot /mnt
 ```
 
 * [GRUB by Archlinux Wiki](https://wiki.archlinux.org/index.php/GRUB)
