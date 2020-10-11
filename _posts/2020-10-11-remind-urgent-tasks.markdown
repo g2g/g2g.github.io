@@ -18,9 +18,10 @@ notify-send -u critical  "$(for ID in $(task priority:V _ids); do echo [$ID]$(ta
 
 ## Schedule it ##
 
-* schedule **`task notification`** as systray message every 20 minutes
+* schedule **`task notification`** as systray message every 20 minutes in Crontab
 
 ```bash
+# crontab -l
 /20 * * * * ~/.local/bin/task_notify_send.sh
 ```
 
