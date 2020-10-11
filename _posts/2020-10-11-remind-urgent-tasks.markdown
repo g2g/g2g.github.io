@@ -24,4 +24,8 @@ notify-send -u critical  "$(for ID in $(task priority:V _ids); do echo [$ID]$(ta
 /20 * * * * ~/.local/bin/task_notify_send.sh
 ```
 
+## Sources ##
+
+* <https://www.sudipbhandari.wtf/task-warrior-reminder/>
+* <https://eshapard.github.io/export-taskwarrior-dates-to-remind.html>
 
