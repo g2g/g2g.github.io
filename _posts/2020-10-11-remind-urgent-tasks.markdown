@@ -13,7 +13,7 @@ date: 2020-10-11T05:18:49+01:00
 #!/usr/bin/env bash
 
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$EUID/bus"
-notify-send -u critical  "$(for ID in $(task priority:V _ids); do echo [$ID]$(task $ID export | jq -r '.[].description') ; done)"
+notify-send -u critical  "$(for ID in $(task _ids priority:V -WAITING -PARENT); do echo [$ID]$(task $ID export | jq -r '.[].description') ; done)"
 ```
 
 ## Schedule it ##
