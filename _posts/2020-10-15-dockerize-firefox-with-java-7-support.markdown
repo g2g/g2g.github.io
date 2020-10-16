@@ -49,6 +49,7 @@ function ffjava7(){
   * <https://blog.yadutaf.fr/2017/09/10/running-a-graphical-app-in-a-docker-container-on-a-remote-server/>
   * <https://www.sicpers.info/2020/10/running-linux-gui-apps-under-macos-using-docker/> [Mac OSX]
   * <https://github.com/jlesage/docker-firefox>
+  * <https://github.com/findepi/docker.firefox-silverlight-pipelight> [Silverlight support]
 * fix Firefox tab persistently crashes on some sites
   * <https://support.mozilla.org/bm/questions/1266719>
 
