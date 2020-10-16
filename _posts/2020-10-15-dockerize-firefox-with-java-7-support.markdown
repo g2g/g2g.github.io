@@ -1,5 +1,5 @@
 ---
-title: Dockerize Firefox with Java 7 support
+title: Dockerize persistent Firefox with Java 7 support
 date: 2020-10-15T23:58:08+01:00
 ---
 ... for old Raritan PDU/KVM devices Web access
@@ -17,7 +17,7 @@ USER firefox
 WORKDIR /home/firefox
 CMD tail -f /dev/null
 ```
-`tail -f /dev/null` force your Docker container to be persistent even if you've closed your Firefox session
+`tail -f /dev/null` force your Docker container to be **persistent** even if you've closed your Firefox session
 
 * build it
 ```bash
