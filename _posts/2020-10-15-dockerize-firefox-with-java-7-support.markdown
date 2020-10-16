@@ -18,6 +18,7 @@ USER firefox
 WORKDIR /home/firefox
 CMD tail -f /dev/null
 ```
+
 `tail -f /dev/null` force your Docker container to be persistent even if you've closed your Firefox session
 
 * build it
