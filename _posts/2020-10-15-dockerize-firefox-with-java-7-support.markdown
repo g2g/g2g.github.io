@@ -8,9 +8,8 @@ date: 2020-10-15T23:58:08+01:00
 
 * create your Dockerfile
 #### **`Dockerfile`**
-```bash
+```dockerfile
 FROM i386/debian:jessie
-
 RUN apt-get update && apt-get install -y firefox-esr icedtea-plugin icedtea-netx openjdk-7-jre openjdk-7-jre-headless tzdata-java
 RUN useradd -ms /bin/bash firefox
 ENV MOZ_FORCE_DISABLE_E10S=1
@@ -18,7 +17,6 @@ USER firefox
 WORKDIR /home/firefox
 CMD tail -f /dev/null
 ```
-
 `tail -f /dev/null` force your Docker container to be persistent even if you've closed your Firefox session
 
 * build it
