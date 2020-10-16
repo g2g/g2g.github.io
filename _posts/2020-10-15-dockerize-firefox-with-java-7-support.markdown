@@ -29,9 +29,20 @@ docker images --filter reference=firefox  # check your docker image information
 
 ## Run your Docker container ##
 
+* pop Firefox
 ```bash
 docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/Downloads:/home/firefox/Downloads firefox firefox                                        # run it with sharing Downloads directory
-alias ffjava7='docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/Downloads:/home/firefox/Downloads firefox firefox' | tee -a $HOME/.bashrc # add an alias to make access simplier
+```
+
+* add it to your .bashrc to simplify Firefox docker access
+#### **`.bashrc`**
+```bash
+function ffjava7(){
+  CONTAINER_NAME=firefox
+  docker container inspect ${CONTAINER_NAME} > /dev/null 2>&1 ; [ $? -eq 0  ] \
+    && docker start firefox \
+    || docker run -d --name ${CONTAINER_NAME} -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/Downloads:/home/firefox/Downloads firefox firefox
+}
 ```
 
 ## Sources ##
