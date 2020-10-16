@@ -4,7 +4,7 @@ date: 2020-10-15T23:58:08+01:00
 ---
 ... for old Raritan PDU/KVM devices Web access
 
-## Build your Dockerfile ##
+## Build your Docker image from Dockerfile ##
 
 * create your Dockerfile
 
@@ -25,7 +25,7 @@ docker build -t firefox .                 # make it great again
 docker images --filter reference=firefox  # check your docker image information
 ```
 
-## Run it ##
+## Run your Docker container ##
 
 ```bash
 docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/Downloads:/home/firefox/Downloads firefox firefox                                        # run it with sharing Downloads directory
