@@ -7,7 +7,6 @@ date: 2020-10-15T23:58:08+01:00
 ## Build your Docker image from Dockerfile ##
 
 * create your Dockerfile
-
 #### **`Dockerfile`**
 ```bash
 FROM i386/debian:jessie
