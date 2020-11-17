@@ -37,6 +37,7 @@ docker run -it --rm -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v $H
 ```bash
 function ffjava7(){
   CONTAINER_NAME=firefox
+  xhost +;
   docker container inspect ${CONTAINER_NAME} > /dev/null 2>&1 ; [ $? -eq 0  ] \
     && docker start firefox \
     || docker run -d --name ${CONTAINER_NAME} -e DISPLAY=${DISPLAY} -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/Downloads:/home/firefox/Downloads firefox firefox
