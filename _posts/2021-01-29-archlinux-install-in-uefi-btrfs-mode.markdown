@@ -19,7 +19,7 @@ gpg --verify archlinux-2021.01.01-x86_64.iso.sig
 
 **! CAUTION !**
 
-> IT WILL DELETE ALL DATA FROM YOUR *FIRST HDD DEVICE*
+> IT WILL DELETE ALL DATA FROM YOUR **FIRST HDD DEVICE**
 > ( SATA or SSD )
 
 ```bash
