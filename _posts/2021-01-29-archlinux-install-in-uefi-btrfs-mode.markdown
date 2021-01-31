@@ -17,7 +17,10 @@ gpg --verify archlinux-2021.01.01-x86_64.iso.sig
 
 ## INSTALL FROM LIVECD ##
 
-* *! CAUTION !* : IT WILL DELETE ALL DATA FROM YOUR *FIRST HDD DEVICE* ( SATA or SSD )
+**! CAUTION !**
+
+> IT WILL DELETE ALL DATA FROM YOUR *FIRST HDD DEVICE*
+> ( SATA or SSD )
 
 ```bash
 MY_DEVICE="$(awk '/ sd| vd| nvme/{print $4}' /proc/partitions | head -1)"
