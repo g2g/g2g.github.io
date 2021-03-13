@@ -15,6 +15,7 @@ With Markdown Viewer Addon by Simeon Velichkov.
 * press  &nbsp; **![markdown viewer icon](https://raw.githubusercontent.com/simov/markdown-viewer/master/icons/icon19.png)** &nbsp; button from toolbar
 * press **advanced options** 
     * **Allowed Origins >** select `*://*`
+* (you may need to use special configuration)[https://github.com/KeithLRobertson/markdown-viewer#support-for-local-files-on-linux] (from [issue #131](https://github.com/simov/markdown-viewer/issues/131))
 
 ## View file with rst extension ##
 
