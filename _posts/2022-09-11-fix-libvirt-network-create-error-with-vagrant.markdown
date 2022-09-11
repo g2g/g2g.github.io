@@ -42,5 +42,5 @@ virsh net-list
 brctl show
 ```
 
-* [create +libvirt +network](https://kashyapc.fedorapeople.org/virt/create-a-new-libvirt-bridge.txt)
+* [create libvirt network](https://kashyapc.fedorapeople.org/virt/create-a-new-libvirt-bridge.txt)
 
