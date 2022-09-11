@@ -13,7 +13,7 @@ omainCreateWithFlags failed: Network not found: no network with matching name 'v
 * fix it
 
 ```bash
-cat <EOF> /var/tmp/vagrant-libvirt.xml
+cat<<EOF> /var/tmp/vagrant-libvirt.xml
 <!--
 WARNING: THIS IS AN AUTO-GENERATED FILE. CHANGES TO IT ARE LIKELY TO BE
 OVERWRITTEN AND LOST. Changes to this xml configuration should be made using:
