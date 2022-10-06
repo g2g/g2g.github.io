@@ -1,13 +1,15 @@
 ---
-title: Resize VM disk for TrueNAS
+title: Increase VM ZVOL for TrueNAS
 date: 2022-10-06T20:29:50+01:00
 ---
+... to resize Debian VM Logical Volume
 
 ## Resize Linux VM's LLVM Virtual Disk on a ZVOL for TrueNAS ##
 
 * increase ZFS disk size in TrueNAS UI
   * Storage tab > edit your zvol > modify "Size for this zvol" field value > Save
 
+* resize Debian VM disk
 ```bash
 reboot
 apt install gdisk -y
