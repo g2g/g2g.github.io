@@ -16,5 +16,5 @@ git clone git@github.com:my_user/tldr.git ~/.cache/tealdeer/tldr-pages
 
 By this way, you can :
 - get locally your modifications with `tldr command`
-- modify markdown pages inside ~/.cache/tealdeer/tldr-pages/
+- modify markdown pages inside `~/.cache/tealdeer/tldr-pages/`
 - contribute with PR to the project
