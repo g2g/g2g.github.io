@@ -18,3 +18,8 @@ By this way, you can :
 - get locally your modifications with `tldr command`
 - modify markdown pages inside `~/.cache/tealdeer/tldr-pages/`
 - contribute with PR to the project
+
+## SOURCES
+
+* [tldr-pages github project](https://github.com/tldr-pages/tldr)
+* [tldr rust client](https://dbrgn.github.io/tealdeer/intro.html)
