@@ -20,14 +20,14 @@ gpg --list-key toto@perdu.com # ensure that gpg email user is the same as git em
 git config --global --edit    # ensure that gpg email user is the same as git email user
 
 cat<<\EOF>>$HOME/.bash_profile
-eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ -f ~/.bashrc ]] && source ~/.bashrc
 EOF
 
 cat<<\EOF>>$HOME/.bashrc
+eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null)"
 # password-store completion
 for COMPLETION in /opt/homebrew/etc/bash_completion.d/* ; do
-  source $COMPLETION;
+  source $COMPLETION 2>/dev/null;
 done
 
 [[ -z $(pgrep gpg-agent) ]] && gpg-agent --pinentry-program=/opt/homebrew/bin/pinentry-tty --daemon # for password-store
