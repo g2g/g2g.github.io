@@ -4,7 +4,7 @@ date: 2023-08-07T19:55:53+01:00
 ---
 ... or how to migrate your pass keys softly
 
-## Source ##
+## Source
 
 ```bash
 for FOLDER in $HOME/.password-store $HOME/.gnupg ; do
@@ -33,3 +33,7 @@ done
 [[ -z $(pgrep gpg-agent) ]] && gpg-agent --pinentry-program=/opt/homebrew/bin/pinentry-tty --daemon # for password-store
 EOF
 ```
+
+## Sources
+
+* [ZX2C4 Pass Documentation](https://www.passwordstore.org/)
