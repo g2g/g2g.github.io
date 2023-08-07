@@ -19,12 +19,12 @@ brew install gnupg pass pinentry
 gpg --list-key toto@perdu.com # ensure that gpg email user is the same as git email user
 git config --global --edit    # ensure that gpg email user is the same as git email user
 
-cat<<EOF>>$HOME/.bash_profile
+cat<<\EOF>>$HOME/.bash_profile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ -f ~/.bashrc ]] && source ~/.bashrc
 EOF
 
-cat<<EOF>>$HOME/.bashrc
+cat<<\EOF>>$HOME/.bashrc
 # password-store completion
 for COMPLETION in /opt/homebrew/etc/bash_completion.d/* ; do
   source $COMPLETION;
