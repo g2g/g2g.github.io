@@ -48,9 +48,9 @@ virsh console --domain <archlinux_arm64>
 
 ## SOURCES
 
-* https://github.com/AsahiLinux/docs/wiki/SW%3AUbuntu-Asahi-Qemu
-* https://www.reddit.com/r/AsahiLinux/comments/107m4nb/windows_vm_on_asahi_qemukvm_virtmanager/
-* https://www.reddit.com/r/AsahiLinux/comments/y6hplo/virtual_machines_on_asahi_linux/
+* [Ubuntu Asahi Qemu](https://github.com/AsahiLinux/docs/wiki/SW%3AUbuntu-Asahi-Qemu)
+* [Windows vm on Asahi Qemu/kvm Virtmanager](https://www.reddit.com/r/AsahiLinux/comments/107m4nb/windows_vm_on_asahi_qemukvm_virtmanager/)
+* [Virtual Machines on Asahi Linux](https://www.reddit.com/r/AsahiLinux/comments/y6hplo/virtual_machines_on_asahi_linux/)
 
 
 * ENJOY !
