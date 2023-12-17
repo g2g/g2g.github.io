@@ -14,6 +14,7 @@ date: 2023-11-17T09:52:01+01:00
   * [Copy PlainText](https://addons.mozilla.org/en-US/firefox/addon/copy-plaintext/)
   * [Copy ShortURL](https://addons.mozilla.org/en-US/firefox/addon/copy-shorturl/)
   * [Dark Mode (WebExtension)](https://addons.mozilla.org/en-US/firefox/addon/dark-mode-webextension/)
+  * [Export Tabs URLs](https://addons.mozilla.org/en-US/firefox/addon/export-tabs-urls-and-titles/)
   * [Flagfox](https://addons.mozilla.org/en-US/firefox/addon/flagfox/)
   * [FoxyProxy Basic](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-basic/)
   * [FoxyTab](https://addons.mozilla.org/en-US/firefox/addon/foxytab/)
