@@ -1,0 +1,12 @@
+services:
+  hugo-server:
+    image: hugomods/hugo:exts-0.147.0
+    container_name: hugo-server
+    environment:
+      - HUGO_ENV=production
+    command: hugo server --bind 0.0.0.0 --disableFastRender --logLevel debug
+    ports:
+      - "1313:1313"
+    volumes:
+      - ./:/src
+    restart: unless-stopped

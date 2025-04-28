@@ -1,0 +1,199 @@
+# ~~~~~~~~~
+# hugo own configuration
+# ~~~~~~~~~
+baseURL: "/" # Main site URL
+title: /proc/sys/net/unix # Site title
+copyright: "[©2025 guesde.com](https://guesde.com/)" #  Copyright statement of the website, usually displayed in the footer
+pagination.pagerSize: 7 # Home page paging size
+theme: PaperMod # Theme
+languageCode: en-US # Language
+
+enableInlineShortcodes: true # Shortcode, similar to template variables, can be easily inserted when writing markdown. There is a video in the official document that explains it very simply
+hasCJKLanguage: true # Is there CJK characters
+enableRobotsTXT: true # Allow robots.txt generation
+buildDrafts: false # Whether to include drafts when building
+buildFuture: false # Build content for future releases
+buildExpired: false # Build expired content                   
+enableEmoji: true # Allow emoji
+pygmentsUseClasses: true
+defaultContentLanguage: en # Language interface displayed first at the top
+defaultContentLanguageInSubdir: false # Whether to add the default language code in the address bar
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+languages:
+# fr:
+#   contentDir: content/fr
+#   languageName: "FR"
+#   weight: 2
+#   taxonomies: # Classification system
+#     category: categories
+#     tag: tags
+#   # https://gohugo.io/content-management/menus/#define-in-site-configuration
+#   menus:
+#     main:
+#       - name: Accueil
+#         pageRef: /
+#         weight: 4 # Control the order of display on the page
+#       - name: Archives
+#         pageRef: archives/
+#         weight: 5
+#       - name: Categories
+#         pageRef: categories/
+#         weight: 10
+#       - name: Tags
+#         pageRef: tags/
+#         weight: 10
+#       - name: Recherche
+#         pageRef: search/
+#         weight: 21
+#       - name: A propos
+#         pageRef: about/
+#         weight: 22
+  en:
+    contentDir: content
+    languageName: "EN"
+    weight: 1
+    taxonomies: # Classification system
+      category: categories
+      tag: tags
+    # https://gohugo.io/content-management/menus/#define-in-site-configuration
+    menus:
+      main:
+        - name: Home
+          pageRef: /
+          weight: 4 # Control the order of display on the page
+        - name: Archives
+          pageRef: archives/
+          weight: 5
+        - name: Categories
+          pageRef: categories/
+          weight: 10
+        - name: Tags
+          pageRef: tags/
+          weight: 10
+        - name: Search
+          pageRef: search/
+          weight: 20
+        - name: About
+          pageRef: about/
+          weight: 21
+
+# ~~~~~~~~~
+# Theme configuration (basically)
+# ~~~~~~~~~
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  author: G2G
+  defaultTheme: dark # Default is dark background
+  ShowShareButtons: false # Whether to enable the share button
+  ShowReadingTime: false # Display reading time
+  displayFullLangName: true # Display full name
+  ShowPostNavLinks: true # Display article navigation link, that is, the one for the next page and previous page
+  ShowBreadCrumbs: false # Whether to display the breadcrumbs above the title
+  ShowCodeCopyButtons: true # Whether to display the copy code button
+  ShowRssButtonInSectionTermList: true # RSS related
+  ShowAllPagesInArchive: true # Display all pages on the archive page
+  ShowPageNums: true # Display the number of pages
+  ShowToc: true # Whether to display the directory of the article details page
+  TocOpen: true # Whether the directory is expanded by default
+  comments: true #
+  images: ["https://amown.cn/PicGo/cover.png"] # Default image, for example, the cover of the blog
+  #images:
+   # - https://amown.cn/PicGo/cover.png
+    #- https://i.postimg.cc/7hwBy7VS/calcr.png
+
+  DateFormat: "2006-01-02" # This time is written by the author himself, so it can only be written like this
+
+  cover:
+    linkFullImages: false
+
+  # Some information above the article on the homepage
+  homeInfoParams:
+    # Profile content on the homepage
+    Title: "Hi 🤗"
+    # Profile content on the homepage
+    Content: >
+
+      Lost in Internet ? Welcome to my Island !
+
+      </div>
+
+      </div>
+  # Buttons for social accounts
+  socialIcons:
+    - name: github
+      title: Follow my Github
+      url: "https://github.com/g2g"
+    - name: bluesky
+      title: Follow my Bluesky
+      url: "https://bsky.app/profile/lo2g.bsky.social"
+    - name: rss
+      title: Follow my Feeds
+      url: "./index.xml"
+    #- name: Youtube
+    #  title: Follow my Youtube Channel
+    #  url: "https://youtube.com/@sonnycalcr"
+    #- name: Telegram
+    #  title: Contact Me
+    #  url: "https://t.me/sonnycalcr"
+
+  # Search
+  fuseOpts:
+      isCaseSensitive: false
+      shouldSort: true
+      location: 0
+      distance: 1000
+      threshold: 0.4
+      minMatchCharLength: 0
+      # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+      keys: ["title", "permalink", "summary", "content"]
+      includeMatches: true
+  # Set the icon of the website's tab, i.e. favicon
+  assets:
+      favicon: "favicon.png"
+      favicon16x16: "favicon.png"
+      favicon32x32: "favicon.png"
+      apple_touch_icon: "favicon.png"
+      safari_pinned_tab: "favicon.png"
+      disableHLJS: true
+
+  # Comment settings
+  giscus:
+    repo: "LongDiDong/pub-hugo-papermod"
+    repoId: "R_kgDOOeaiyg"
+    category: "Announcements"
+    categoryId: "DIC_kwDOOeaiys4CpYb0"
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    lightTheme: "light"
+    darkTheme: "dark"
+    lang: "zh-CN"
+    crossorigin: "anonymous"
+
+# https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
+outputs:
+  home:
+    - HTML # Generated static page
+    - RSS # This doesn't matter
+    - JSON # necessary for search, after modifying the configuration here, you must regenerate it
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Can be unsafe, some HTML tags and styles may need
+  highlight:
+    anchorLineNos: false # Do not set anchors for line numbers
+    codeFences: true
+    noClasses: false # TODO: I don't know what it does, there is no need to understand it for now, it does not affect the display
+    lineNos: true # Code line
+    lineNumbersInTable: false # Do not set it to true, otherwise if the article starts with code, the summary will start with a bunch of numbers (i.e. code line numbers)
+    # Setting style here is useless, you have to add css yourself
+    # style: "github-dark"
+    # style: monokai

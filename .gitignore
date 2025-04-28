@@ -1,29 +1,28 @@
-# Vim
-*~
-*.sw[p_]
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
 
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
+# Folders
+_obj
+_test
 
-# Ruby Gem
-*.gem
-.bundle
-Gemfile.lock
-**/vendor/bundle
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
 
-# Node.js and NPM
-node_modules
-npm-debug.log*
-package-lock.json
-codekit-config.json
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
 
-# macOS
+_testmain.go
+
+*.exe
+*.test
+
+public
 .DS_Store
-
-# Jekyll generated files
-.jekyll-cache
-.jekyll-metadata
-.sass-cache
-_asset_bundler_cache
-_site
+.hugo_build.lock
+resources/_gen/
