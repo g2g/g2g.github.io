@@ -163,10 +163,10 @@ params:
 
   # Comment settings
   giscus:
-    repo: "LongDiDong/pub-hugo-papermod"
-    repoId: "R_kgDOOeaiyg"
+    repo: "g2g/g2g.github.io"
+    repoId: "MDEwOlJlcG9zaXRvcnkxNjU5NTE1MjM="
     category: "Announcements"
-    categoryId: "DIC_kwDOOeaiys4CpYb0"
+    categoryId: "DIC_kwDOCeQ4I84CpkMm"
     mapping: "pathname"
     strict: "0"
     reactionsEnabled: "1"
@@ -174,7 +174,7 @@ params:
     inputPosition: "bottom"
     lightTheme: "light"
     darkTheme: "dark"
-    lang: "zh-CN"
+    lang: "en"
     crossorigin: "anonymous"
 
 # https://github.com/adityatelange/hugo-PaperMod/wiki/Features#search-page
